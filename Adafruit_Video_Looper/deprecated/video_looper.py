@@ -16,9 +16,9 @@ import threading
 from datetime import datetime
 import RPi.GPIO as GPIO
 
-# from .alsa_config import parse_hw_device
-import model 
-import playlist_builders 
+from .alsa_config import parse_hw_device
+from .model import Playlist, Movie
+from .playlist_builders import build_playlist_m3u
 
 # Basic video looper architecure:
 #
