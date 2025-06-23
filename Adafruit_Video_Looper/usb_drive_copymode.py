@@ -7,7 +7,7 @@ import shutil
 import re
 import pygame
 import time
-from .usb_drive_mounter import USBDriveMounter
+import usb_drive_mounter 
 
 
 class USBDriveReaderCopy(object):

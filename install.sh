@@ -12,7 +12,7 @@ fi
 
 echo "Installing dependencies..."
 echo "=========================="
-apt update && apt -y install python3 python3-pip python3-pygame supervisor omxplayer ntfs-3g exfat-fuse
+apt update && apt -y install python3 python3-setuptools python3-pip python3-pygame supervisor vlc-bin ntfs-3g exfat-fuse
 
 if [ "$*" != "no_hello_video" ]
 then
@@ -41,7 +41,7 @@ mkdir -p /mnt/usbdrive0 # This is very important if you put your system in reado
 mkdir -p /home/pi/video # create default video directory
 chown pi:pi /home/pi/video
 
-pip3 install setuptools
+
 python3 setup.py install --force
 
 cp ./assets/video_looper.ini /boot/video_looper.ini
